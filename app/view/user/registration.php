@@ -1,15 +1,8 @@
-<?php 
-include('classes/User.php');
-if(!empty($_POST)) {
-	$user = new User();
-	$user->registration();
-	$result = $user->result;
-}
-?>
-<?php if(isset($result)): ?>
-	<h2><?php echo $result; ?></h2>
+<?php if(isset($data['result'])): ?>
+	<h2><?php echo $data['result']; ?></h2>
 <?php endif; ?>
 <form role="form" method="post">
+	<input type="hidden" name="auth" value="registration">
 	<div class="form-group">
 		<input type="text" class="form-control" name="email" placeholder="Enter email">
 	</div>
