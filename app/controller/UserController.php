@@ -1,6 +1,6 @@
 <?php
 
-class UserController extends AbstractController{
+class UserController extends Controller{
 
     public function index()
     {

@@ -1,5 +1,4 @@
-<?php 
-include ('Db.php');
+<?php
 
 class User extends DB{
 	const TABLE = 'users';
