@@ -5,6 +5,6 @@ class Controller {
 
     public function renderView($view, $data = array())
     {
-        include_once BASE_PATH . '/app/view/' . $this->layout . '.php';
+        include_once BASE_PATH . '/app/view/' . $this->layout . '.php'; // app/view/layout/1column.php
     }
 } 

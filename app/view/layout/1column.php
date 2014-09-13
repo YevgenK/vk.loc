@@ -8,11 +8,7 @@
 <body>
 <?php include BASE_PATH . '/app/view/header.php' ?>
 <section class="main">
-    <?php if(empty($_SESSION['user_id'])): ?>
-        <?php include BASE_PATH . '/app/view/' . $view . '.php' ?>
-    <?php else: ?>
-        <p>Hello <?php echo $_SESSION['login']; ?> </p>
-    <?php endif; ?>
+    <?php include BASE_PATH . '/app/view/' . $view . '.php' // app/view/user/registration.php ?>
 </section>
 <?php include BASE_PATH . '/app/view/footer.php'; ?>
 </body>

@@ -1,3 +1,3 @@
 <header>
-	<h1>VK</h1>
+	<h1><a href="<?php echo App::getConfig('base_url') ?>">VK</a></h1>
 </header>

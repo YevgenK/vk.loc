@@ -2,8 +2,17 @@
 
 class UserController extends Controller{
 
-    public function index()
+    public function registration()
     {
-        $this->renderView('user/registration', array('result' => 'Tester'));
+        if(!empty($_POST)) {
+            $user = new User();
+            $user->registration($_POST);
+            $this->renderView('user/registration', array('result' => $user->result));
+        }
+        $this->renderView('user/registration');
+    }
+
+    public function login() {
+        $this->renderView('user/login');
     }
 } 
