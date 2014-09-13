@@ -8,6 +8,7 @@ class UserController extends Controller{
             $user = new User();
             $user->registration($_POST);
             $this->renderView('user/registration', array('result' => $user->result));
+            return;
         }
         $this->renderView('user/registration');
     }
