@@ -1,4 +1,4 @@
 <?php
 return array(
-    'base_url' => 'vk.loc'
+    'base_url' => 'http://vk.loc/'
 );
